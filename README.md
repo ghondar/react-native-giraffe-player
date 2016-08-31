@@ -14,6 +14,12 @@
 ##### Add dependency to `android/settings.gradle`
 ```
 ...
+include ':ijkplayer-java'
+project(':ijkplayer-java').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-giraffe-player/android/ijkplayer-java')
+
+include ':giraffeplayer'
+project(':giraffeplayer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-giraffe-player/android/giraffeplayer')
+
 include ':react-native-giraffe-player'
 project(':react-native-giraffe-player').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-giraffe-player/android/player')
 ```
