@@ -12,9 +12,10 @@
         >
         <activity
             android:name=".GiraffePlayerActivity"
+            android:keepScreenOn="true"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="sensor"
-            />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 
