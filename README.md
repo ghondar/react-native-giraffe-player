@@ -140,7 +140,7 @@ export default Example
 * `SCALETYPE_4_3` - scale x and y with aspect ratio 4:3 until both dimensions (width and height) of the video will be equal to or **less** than the corresponding dimension of the view.
 
 ### Config
-* `setTitle(title)` - start video
+* `setTitle(title)` - set title => title: String
 * `setFullScreenOnly(val)` - set fullscreen => val: Boolean
 * `setShowNavIcon(val)` - set back button => val: Boolean
 
