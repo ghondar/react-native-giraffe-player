@@ -87,7 +87,7 @@ public class GPlayer extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setDefaultRetryTime(Long defaultRetryTime) {
+    public void setDefaultRetryTime(int defaultRetryTime) {
         config.setDefaultRetryTime(defaultRetryTime);
     }
 
