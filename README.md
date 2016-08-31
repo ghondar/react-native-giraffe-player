@@ -27,7 +27,8 @@ dependencies {
 }
 ```
 
-* If you're using react-native 0.25~0.29, follow these steps
+#### If you're using react-native 0.25~0.29, follow these steps
+
 ##### Register module in `MainActivity.java`
 ```Java
 import com.ghondar.gplayer.*;  // <--- import
@@ -53,7 +54,8 @@ import com.ghondar.gplayer.*;  // <--- import
     }
 ```
 
-* If you're using react-native 0.30+, follow these steps
+#### If you're using react-native 0.30+, follow these steps
+
 ##### Register module in `MainApplication.java`
 ```Java
 import com.ghondar.gplayer.*;  // <--- import
@@ -122,8 +124,8 @@ export default Example
 
 ```
 
-#### API
-## Constants
+## API
+### Constants
 * `SCALETYPE_FITPARENT` - scale the video uniformly (maintain the video's aspect ratio) so that both dimensions (width and height) of the video will be equal to or **less** than the corresponding dimension of the view. like ImageView's `CENTER_INSIDE`.
 * `SCALETYPE_FILLPARENT` - scale the video uniformly (maintain the video's aspect ratio) so that both dimensions (width and height) of the video will be equal to or **larger** than the corresponding dimension of the view .like ImageView's `CENTER_CROP`.
 * `SCALETYPE_WRAPCONTENT` - center the video in the view,if the video is less than view perform no scaling,if video is larger than view then scale the video uniformly so that both dimensions (width and height) of the video will be equal to or **less** than the corresponding dimension of the view.
@@ -131,17 +133,17 @@ export default Example
 * `SCALETYPE_16_9` - scale x and y with aspect ratio 16:9 until both dimensions (width and height) of the video will be equal to or **less** than the corresponding dimension of the view.
 * `SCALETYPE_4_3` - scale x and y with aspect ratio 4:3 until both dimensions (width and height) of the video will be equal to or **less** than the corresponding dimension of the view.
 
-## Config
+### Config
 * `setTitle(title)` - start video
 * `setFullScreenOnly(val)` - set fullscreen => val: Boolean
 * `setShowNavIcon(val)` - set back button => val: Boolean
 
 * `setScaleType(SCALE_TYPE)` - set video scale type => SCALE_TYPE: String
 
-## initialize
+### initialize
 * `play(url)` - play video => url: String
 
-## initialized
+### initialized
 * `setScaleType(SCALE_TYPE)` - set video scale type => SCALE_TYPE: String
 * `stop()` - stop video
 * `pause()` - pause video
@@ -153,7 +155,7 @@ export default Example
 * `getCurrentPosition()` - get current position, example: `getCurrentPosition.then(position => {...}).catch(e => {..})` => position: Integer
 * `getDuration()` - get video duration, example: `getDuration.then(duration => {...}).catch(e => {..})` => duration: Integer
 
-## Events
+### Events
 * `onBufferingStart` - when have loaded buffer
 * `onBufferingEnd`  - when have finalized buffer
 * `onNetworkBandwidth` - get network bandwidth progress => milliseconds: Integer
