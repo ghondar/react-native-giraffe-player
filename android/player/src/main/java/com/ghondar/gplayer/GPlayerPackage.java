@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by ghondar on 8/28/16.
+ * Created by ghondar on 8/31/16.
  */
 
 public class GPlayerPackage implements ReactPackage {
