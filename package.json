@@ -1,0 +1,22 @@
+{
+  "name": "react-native-giraffe-player",
+  "version": "0.0.1",
+  "description": "Video Player based on GiraffePlayer for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": "git@github.com:ghondar/react-native-giraffe-player.git",
+  "keywords": [
+    "react-native",
+    "android",
+    "player",
+    "vlc",
+    "stream",
+    "hls",
+    "giraffe",
+    "video"
+  ],
+  "author": "abgv9221@gmail.com",
+  "license": "MIT"
+}
