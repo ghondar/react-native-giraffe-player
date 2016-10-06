@@ -69,8 +69,8 @@ import com.ghondar.gplayer.*;  // <--- import
 @Override
  protected List<ReactPackage> getPackages() {
    return Arrays.<ReactPackage>asList(
-      new MainReactPackage()
-      new GPlayerPackage(),  // <------- here
+      new MainReactPackage(),
+      new GPlayerPackage()  // <------- here
    );
  }
 ```
