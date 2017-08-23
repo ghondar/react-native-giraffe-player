@@ -87,7 +87,14 @@ class Example extends Component {
   componentWillMount() {
     GPlayer.addEventListener('onRenderingStart', this.onRenderingStart);
   }
-
+  
+  componentDidMount() {
+    // Config Video Player before playing
+    GPlayer.setTitle('Video Title');
+    GPlayer.setFullScreenOnly(true);
+    GPlayer.setShowNavIcon(false);
+  }
+  
   componentWillUnmount() {
     GPlayer.removeEventListener('onRenderingStart', this.onRenderingStart);
   }
